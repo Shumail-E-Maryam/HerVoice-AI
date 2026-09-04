@@ -64,6 +64,9 @@ app.add_middleware(
         "http://127.0.0.1:5174",
         "http://localhost:5173",
         "http://127.0.0.1:5173",
+
+        # PRODUCTION FRONTEND
+        "https://hervoice-ai-shu.vercel.app",
     ],
     allow_credentials=False,
     allow_methods=["*"],
@@ -250,6 +253,7 @@ async def chat(
 
     # Only retrieve external knowledge when the user's
     # message actually looks information/resource related.
+
     information_intents = {
         "information",
         "legal",
