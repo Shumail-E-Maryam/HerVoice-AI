@@ -1,0 +1,6 @@
+venv/
+.env
+__pycache__/
+*.pyc
+hervoice.db
+.pytest_cache/
